@@ -1,0 +1,620 @@
+===========================================================
+HEURISTICS_RULE_768
+ISO29148 REQUIREMENT VALIDATION HEURISTICS
+VERSION 2.0
+===========================================================
+
+PURPOSE
+-------
+This heuristic knowledge base supports semantic validation
+of natural language requirements according to ISO/IEC/IEEE
+29148, INCOSE Guide to Writing Requirements, and Volere
+recommendations.
+
+Each rule maps linguistic patterns to requirement quality
+violations and severity levels.
+
+===========================================================
+RULE H001
+===========================================================
+
+Rule ID:
+H001
+
+Name:
+Vague Terms
+
+Description:
+Detects subjective and vague terms that allow multiple
+interpretations and prevent objective verification.
+
+Patterns:
+- adequate
+- appropriate
+- comprehensive
+- sufficient
+- efficient
+- robust
+- flexible
+- short
+- long
+- frequent
+- frequently
+- infrequent
+- often
+- usually
+- normally
+- minimal
+- maximum
+- minimum
+
+Exception:
+
+The rule shall NOT be triggered when:
+
+- a measurable threshold is explicitly specified;
+- the term is formally defined within the requirement;
+- the term is defined by a referenced standard,
+  regulation, glossary, or domain specification.
+
+Detected Defect:
+D001 Vagueness
+
+Violated Dimensions:
+- Unambiguity
+- Verifiability
+
+Severity:
+HIGH
+
+Examples:
+- adequate documentation
+- comprehensive documentation
+- sufficient support
+
+
+===========================================================
+RULE H002
+===========================================================
+
+Rule ID:
+H002
+
+Name:
+Subjective Goals
+
+Description:
+Detects improvement-oriented statements without measurable
+success criteria.
+
+Patterns:
+- easy
+- easier
+- better
+- improve
+- improved
+- improves
+- improving
+- enhance
+- enhanced
+- optimize
+- optimized
+- maximize
+- minimize
+- reduce effort
+- simplify
+
+Detected Defect:
+D002 Subjective Goal
+
+Violated Dimensions:
+- Unambiguity
+- Verifiability
+
+Severity:
+CRITICAL
+
+Examples:
+- easier to maintain
+- improve usability
+- optimize performance
+- minimize support calls
+
+
+===========================================================
+RULE H003
+===========================================================
+
+Rule ID:
+H003
+
+Name:
+Undefined Actor
+
+Description:
+Detects actor references that are not explicitly defined.
+
+Patterns:
+- actors
+- stakeholders
+- personnel
+- staff
+- users
+- operators
+- participants
+
+Detected Defect:
+D003 Undefined Actor
+
+Violated Dimensions:
+- Completeness
+- Unambiguity
+
+Severity:
+HIGH
+
+Examples:
+- notify actors
+- inform stakeholders
+- update personnel
+
+
+===========================================================
+RULE H004
+===========================================================
+
+Rule ID:
+H004
+
+Name:
+Undefined Object
+
+Description:
+Detects references to artifacts or information objects that
+lack explicit scope, content, or boundaries.
+
+Patterns:
+- documentation
+- information
+- data
+- support
+- records
+- reports
+
+Condition:
+The object is not qualified by scope, content,
+coverage, or purpose.
+
+Detected Defect:
+D004 Undefined Object
+
+Violated Dimensions:
+- Completeness
+
+Severity:
+MEDIUM
+
+Examples:
+- provide documentation
+- supply information
+- maintain records
+
+
+===========================================================
+RULE H005
+===========================================================
+
+Rule ID:
+H005
+
+Name:
+Contextual Reference
+
+Description:
+Detects references that require external context to be
+understood.
+
+Patterns:
+- this
+- that
+- these
+- those
+
+Detected Defect:
+D005 Contextual Reference
+
+Violated Dimensions:
+- Completeness
+- Traceability
+
+Severity:
+MEDIUM
+
+Examples:
+- this documentation
+- that procedure
+- these reports
+
+
+===========================================================
+RULE H006
+===========================================================
+
+Rule ID:
+H006
+
+Name:
+Missing Quantification
+
+Description:
+Detects quality attributes without measurable limits,
+thresholds, or acceptance criteria.
+
+Patterns:
+- fast
+- quick
+- quickly
+- rapid
+- rapidly
+- secure
+- reliable
+- responsive
+- high performance
+- low cost
+- short
+- long
+
+Condition:
+
+The quality attribute does not contain:
+
+- a measurable threshold;
+- an acceptance criterion;
+- a referenced standard defining the term.
+
+Detected Defect:
+D006 Missing Quantification
+
+Violated Dimensions:
+- Verifiability
+- Completeness
+
+Severity:
+CRITICAL
+
+Examples:
+- fast response
+- reliable operation
+- secure access
+
+
+===========================================================
+RULE H007
+===========================================================
+
+Rule ID:
+H007
+
+Name:
+Weak Modality
+
+Description:
+Detects weak obligation statements.
+
+Patterns:
+- should
+- may
+- can
+- could
+- might
+
+Detected Defect:
+D007 Weak Modality
+
+Violated Dimensions:
+- Language Quality
+
+Severity:
+LOW
+
+Examples:
+- system should
+- user may
+- application can
+
+
+===========================================================
+RULE H008
+===========================================================
+
+Rule ID:
+H008
+
+Name:
+Compound Requirement
+
+Description:
+Detects multiple obligations within the same requirement.
+
+Patterns:
+- and
+- or
+- additionally
+
+Condition:
+Multiple independent actions or obligations must be present.
+
+Detected Defect:
+D008 Compound Requirement
+
+Violated Dimensions:
+- Singularity
+
+Severity:
+MEDIUM
+
+Examples:
+- authenticate users and generate reports
+- validate input and store results
+
+===========================================================
+Rule ID: H009
+===========================================================
+
+Classification:
+LOGICAL_REVIEW_HINT
+
+Purpose:
+Provides feasibility-related warnings that may
+assist the logical review agent.
+
+Semantic Impact:
+NONE
+
+Logical Impact:
+ADVISORY
+
+Example:
+100% availability
+zero defects
+unlimited storage
+instant response
+
+===========================================================
+RULE H010
+===========================================================
+
+Rule ID:
+H010
+
+Name:
+Subjective Temporal Expression
+
+Description:
+Detects subjective temporal or duration-related terms
+that are not objectively measurable.
+
+Patterns:
+- short
+- long
+- briefly
+- temporary
+- prolonged
+
+Detected Defect:
+D010 Subjective Duration
+
+Violated Dimensions:
+- Unambiguity
+
+Severity:
+MEDIUM
+
+Condition:
+
+The duration is not quantified and no referenced
+standard defines the term.
+
+Examples:
+- short indication
+- long notification
+- brief alert
+
+
+===========================================================
+SEVERITY DEFINITIONS
+===========================================================
+
+CRITICAL
+--------
+Requirement cannot be objectively verified,
+is infeasible, or lacks measurable criteria.
+
+Typical Result:
+SEMANTIC_UNSAT
+
+
+HIGH
+----
+Serious ambiguity or incompleteness affecting
+correct interpretation.
+
+Typical Result:
+SEMANTIC_UNSAT
+
+
+MEDIUM
+------
+Quality issue affecting precision but not
+necessarily invalidating the requirement.
+
+Typical Result:
+SEMANTIC_PARTIAL
+
+
+LOW
+---
+Editorial or language-quality issue.
+
+Typical Result:
+SEMANTIC_SAT_WITH_WARNING
+
+
+===========================================================
+DECISION LOGIC
+===========================================================
+
+IF any CRITICAL rule is triggered:
+
+    Semantic Status = SEMANTIC_UNSAT
+
+
+ELSE IF any HIGH rule is triggered:
+
+    Semantic Status = SEMANTIC_UNSAT
+
+
+ELSE IF any MEDIUM rule is triggered:
+
+    Semantic Status = SEMANTIC_PARTIAL
+
+
+ELSE IF only LOW rules are triggered:
+
+    Semantic Status = SEMANTIC_SAT_WITH_WARNING
+
+
+ELSE:
+
+    Semantic Status = SEMANTIC_SAT
+
+
+===========================================================
+CONSISTENCY CHECK
+===========================================================
+
+For every triggered heuristic rule:
+
+1. The associated violated dimension SHALL appear
+   in the Semantic Validation Report.
+
+2. The issue SHALL be described in the Issue
+   Description field.
+
+3. The triggering rule SHALL be traceable in the
+   Supporting Evidence field.
+
+4. If a triggered rule does not appear in the final
+   semantic findings, the validator SHALL report:
+
+   VALIDATION_INCONSISTENCY
+
+5. Every UNSAT classification SHALL be traceable to
+   at least one triggered heuristic rule or one
+   ISO29148 quality-dimension violation.
+6. If a subjective term is detected by H001,
+   H006, or H010, the validator SHALL verify
+   whether a measurable threshold or external
+   definition exists before reporting a violation.
+
+7. Subjective terms defined by referenced standards SHALL NOT automatically generate violations.
+
+
+===========================================================
+EXPECTED RESULTS FOR CURRENT DATASET
+===========================================================
+
+R0024
+
+Triggered Rules:
+- H001 (adequate)
+- H002 (minimize)
+
+Expected Dimensions:
+- Unambiguity
+- Completeness
+- Verifiability
+
+Expected Result:
+SEMANTIC_UNSAT
+
+
+R0025
+
+Triggered Rules:
+- H003 (actors)
+- H007 (should)
+
+Expected Dimensions:
+- Completeness
+- Unambiguity
+
+Expected Result:
+SEMANTIC_UNSAT
+
+
+R0026
+
+Triggered Rules:
+- H005 (this)
+- H007 (should)
+
+Expected Dimensions:
+- Completeness
+- Traceability
+
+Expected Result:
+SEMANTIC_PARTIAL
+or
+SEMANTIC_UNSAT
+
+
+R0027
+
+Triggered Rules:
+- H001 (comprehensive)
+
+Expected Dimensions:
+- Unambiguity
+- Verifiability
+
+Expected Result:
+SEMANTIC_UNSAT
+
+
+R0028
+
+Triggered Rules:
+- H001 (comprehensive)
+- H002 (easier to maintain)
+- H007 (should)
+
+Expected Dimensions:
+- Unambiguity
+- Verifiability
+
+Expected Result:
+SEMANTIC_UNSAT
+
+R0405
+
+Triggered Rules:
+- H010 (short)
+
+Expected Dimensions:
+- Unambiguity
+
+Expected Result:
+SEMANTIC_PARTIAL
+
+Exception:
+If a referenced telecom standard defines
+"short indication", then:
+
+Expected Result:
+SEMANTIC_SAT
+
+
+===========================================================
+END OF HEURISTICS_RULE_768_v2
+===========================================================
