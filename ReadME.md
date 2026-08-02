@@ -114,7 +114,6 @@ hybrid-requirements-validation-prompts/
 │   ├── retrieval_reranking_prompt.pdf
 │   ├── semantic_validation_prompt.pdf
 │   ├── formalization_prompt.pdf
-│   ├── z3_verification_prompt.pdf
 │   └── interpreter&review_prompt.pdf
 │
 ├── datasets/
@@ -128,6 +127,13 @@ hybrid-requirements-validation-prompts/
 │   ├── Volere RequirementsSpecification.pdf
 |   ├── Requirements quality heuristics and defect taxonomies.pdf
 |   └── Software Requirements Specifications (SRS).pdf
+
+├── Custom Components/
+│   ├── FOL Validator.pdf
+│   ├── AST Builder.pdf
+│   ├── Signature Validator.pdf
+│   ├── Cross-Requirement Consistency Checker.pdf
+│   └── Z3 Validator.pdf
 
 
 ## 4. Technical Metadata & Project Citation
