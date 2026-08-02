@@ -111,18 +111,24 @@ hybrid-requirements-validation-prompts/
 ├── Hybrid AI Framework for Software Requirement Validation.json
 │
 ├── prompts/
-│   ├── retrieval_reranking_prompt.md
-│   ├── semantic_validation_prompt.md
-│   ├── formalization_prompt.md
-│   ├── z3_verification_prompt.md
-│   └── reporting_prompt.md
+│   ├── retrieval_reranking_prompt.pdf
+│   ├── semantic_validation_prompt.pdf
+│   ├── formalization_prompt.pdf
+│   ├── z3_verification_prompt.pdf
+│   └── interpreter&review_prompt.pdf
 │
 ├── datasets/
 │   ├── benchmark_requirements.csv
 │   └── validation_results.csv
-```
+├── Knowledges Base/
+│   ├── ISO/IEC/IEEE 25010.pdf
+│   ├── ISO/IEC/IEEE 29148.pdf
+│   ├── Requirement Engineering Guideline (INCOSE.pdf)
+│   ├── Guide for Writing Requirements (INCOSE.pdf)
+│   ├── Volere RequirementsSpecification.pdf
+|   ├── Requirements quality heuristics and defect taxonomies.pdf
+|   └── Software Requirements Specifications (SRS).pdf
 
----
 
 ## 4. Technical Metadata & Project Citation
 
