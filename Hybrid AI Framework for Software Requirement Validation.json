@@ -791,34 +791,6 @@
         "className": "",
         "data": {
           "sourceHandle": {
-            "dataType": "RequirementsValidatorComponent",
-            "id": "PythonREPLComponent-0JiOm",
-            "name": "output",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "inputs_logic",
-            "id": "Prompt Template-f6dkd",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__PythonREPLComponent-0JiOm{œdataTypeœ:œRequirementsValidatorComponentœ,œidœ:œPythonREPLComponent-0JiOmœ,œnameœ:œoutputœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-f6dkd{œfieldNameœ:œinputs_logicœ,œidœ:œPrompt Template-f6dkdœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "PythonREPLComponent-0JiOm",
-        "sourceHandle": "{œdataTypeœ:œRequirementsValidatorComponentœ,œidœ:œPythonREPLComponent-0JiOmœ,œnameœ:œoutputœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "Prompt Template-f6dkd",
-        "targetHandle": "{œfieldNameœ:œinputs_logicœ,œidœ:œPrompt Template-f6dkdœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
             "dataType": "Prompt Template",
             "id": "Prompt Template-CR7RJ",
             "name": "prompt",
@@ -841,34 +813,6 @@
         "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-CR7RJœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
         "target": "Agent-bxGrk",
         "targetHandle": "{œfieldNameœ:œsystem_promptœ,œidœ:œAgent-bxGrkœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "Agent",
-            "id": "Agent-bxGrk",
-            "name": "response",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "inputs_semantic",
-            "id": "Prompt Template-f6dkd",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__Agent-bxGrk{œdataTypeœ:œAgentœ,œidœ:œAgent-bxGrkœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-f6dkd{œfieldNameœ:œinputs_semanticœ,œidœ:œPrompt Template-f6dkdœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "Agent-bxGrk",
-        "sourceHandle": "{œdataTypeœ:œAgentœ,œidœ:œAgent-bxGrkœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "Prompt Template-f6dkd",
-        "targetHandle": "{œfieldNameœ:œinputs_semanticœ,œidœ:œPrompt Template-f6dkdœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       },
       {
         "animated": false,
@@ -925,34 +869,6 @@
         "sourceHandle": "{œdataTypeœ:œAgentœ,œidœ:œAgent-36NqUœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}",
         "target": "ASTBuilder-zF3oi",
         "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œASTBuilder-zF3oiœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "Prompt Template",
-            "id": "Prompt Template-f6dkd",
-            "name": "prompt",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "system_prompt",
-            "id": "Agent-dUs3l",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__Prompt Template-f6dkd{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-f6dkdœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-Agent-dUs3l{œfieldNameœ:œsystem_promptœ,œidœ:œAgent-dUs3lœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "Prompt Template-f6dkd",
-        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-f6dkdœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "Agent-dUs3l",
-        "targetHandle": "{œfieldNameœ:œsystem_promptœ,œidœ:œAgent-dUs3lœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       },
       {
         "animated": false,
@@ -1112,34 +1028,6 @@
           },
           "targetHandle": {
             "fieldName": "reranking_context",
-            "id": "Prompt Template-f6dkd",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__Agent-TAZEj{œdataTypeœ:œAgentœ,œidœ:œAgent-TAZEjœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-f6dkd{œfieldNameœ:œreranking_contextœ,œidœ:œPrompt Template-f6dkdœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "Agent-TAZEj",
-        "sourceHandle": "{œdataTypeœ:œAgentœ,œidœ:œAgent-TAZEjœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "Prompt Template-f6dkd",
-        "targetHandle": "{œfieldNameœ:œreranking_contextœ,œidœ:œPrompt Template-f6dkdœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "Agent",
-            "id": "Agent-TAZEj",
-            "name": "response",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "reranking_context",
             "id": "Prompt Template-O8ydo",
             "inputTypes": [
               "Message"
@@ -1237,6 +1125,110 @@
         "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-qQddxœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
         "target": "Prompt Template-CR7RJ",
         "targetHandle": "{œfieldNameœ:œrequirement_idœ,œidœ:œPrompt Template-CR7RJœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "data": {
+          "sourceHandle": {
+            "dataType": "Prompt Template",
+            "id": "Prompt Template-HRaVU",
+            "name": "prompt",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "system_prompt",
+            "id": "Agent-dUs3l",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__Prompt Template-HRaVU{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-HRaVUœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-Agent-dUs3l{œfieldNameœ:œsystem_promptœ,œidœ:œAgent-dUs3lœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "Prompt Template-HRaVU",
+        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-HRaVUœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Agent-dUs3l",
+        "targetHandle": "{œfieldNameœ:œsystem_promptœ,œidœ:œAgent-dUs3lœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "data": {
+          "sourceHandle": {
+            "dataType": "RequirementsValidatorComponent",
+            "id": "PythonREPLComponent-0JiOm",
+            "name": "output",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "inputs_logic",
+            "id": "Prompt Template-HRaVU",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__PythonREPLComponent-0JiOm{œdataTypeœ:œRequirementsValidatorComponentœ,œidœ:œPythonREPLComponent-0JiOmœ,œnameœ:œoutputœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-HRaVU{œfieldNameœ:œinputs_logicœ,œidœ:œPrompt Template-HRaVUœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "PythonREPLComponent-0JiOm",
+        "sourceHandle": "{œdataTypeœ:œRequirementsValidatorComponentœ,œidœ:œPythonREPLComponent-0JiOmœ,œnameœ:œoutputœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Prompt Template-HRaVU",
+        "targetHandle": "{œfieldNameœ:œinputs_logicœ,œidœ:œPrompt Template-HRaVUœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "data": {
+          "sourceHandle": {
+            "dataType": "Agent",
+            "id": "Agent-bxGrk",
+            "name": "response",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "inputs_semantic",
+            "id": "Prompt Template-HRaVU",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__Agent-bxGrk{œdataTypeœ:œAgentœ,œidœ:œAgent-bxGrkœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-HRaVU{œfieldNameœ:œinputs_semanticœ,œidœ:œPrompt Template-HRaVUœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "source": "Agent-bxGrk",
+        "sourceHandle": "{œdataTypeœ:œAgentœ,œidœ:œAgent-bxGrkœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Prompt Template-HRaVU",
+        "targetHandle": "{œfieldNameœ:œinputs_semanticœ,œidœ:œPrompt Template-HRaVUœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "data": {
+          "sourceHandle": {
+            "dataType": "Agent",
+            "id": "Agent-TAZEj",
+            "name": "response",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "reranking_context",
+            "id": "Prompt Template-HRaVU",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__Agent-TAZEj{œdataTypeœ:œAgentœ,œidœ:œAgent-TAZEjœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-HRaVU{œfieldNameœ:œreranking_contextœ,œidœ:œPrompt Template-HRaVUœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "source": "Agent-TAZEj",
+        "sourceHandle": "{œdataTypeœ:œAgentœ,œidœ:œAgent-TAZEjœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Prompt Template-HRaVU",
+        "targetHandle": "{œfieldNameœ:œreranking_contextœ,œidœ:œPrompt Template-HRaVUœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       }
     ],
     "nodes": [
@@ -1814,7 +1806,7 @@
             ],
             "frozen": false,
             "icon": "file-text",
-            "last_updated": "2026-08-08T15:18:11.877Z",
+            "last_updated": "2026-08-08T15:27:37.604Z",
             "legacy": false,
             "lf_version": "1.9.3",
             "metadata": {
@@ -8009,6 +8001,34 @@
                     },
                     "name": "gemini-3.1-flash-lite-preview",
                     "provider": "Google Generative AI"
+                  },
+                  {
+                    "category": "Ollama",
+                    "icon": "Ollama",
+                    "metadata": {
+                      "api_key_param": "api_key",
+                      "base_url_param": "base_url",
+                      "context_length": 128000,
+                      "max_tokens_field_name": "max_tokens",
+                      "model_class": "ChatOllama",
+                      "model_name_param": "model"
+                    },
+                    "name": "gemma4:latest",
+                    "provider": "Ollama"
+                  },
+                  {
+                    "category": "Ollama",
+                    "icon": "Ollama",
+                    "metadata": {
+                      "api_key_param": "api_key",
+                      "base_url_param": "base_url",
+                      "context_length": 128000,
+                      "max_tokens_field_name": "max_tokens",
+                      "model_class": "ChatOllama",
+                      "model_name_param": "model"
+                    },
+                    "name": "llama3:latest",
+                    "provider": "Ollama"
                   }
                 ],
                 "override_skip": false,
@@ -9284,8 +9304,8 @@
           "width": 320
         },
         "position": {
-          "x": 1405.6321496962473,
-          "y": 268.3351560483718
+          "x": 2187.652532768505,
+          "y": 750.8583711355095
         },
         "selected": false,
         "type": "genericNode"
@@ -11443,6 +11463,34 @@
                     },
                     "name": "gemini-3.1-flash-lite-preview",
                     "provider": "Google Generative AI"
+                  },
+                  {
+                    "category": "Ollama",
+                    "icon": "Ollama",
+                    "metadata": {
+                      "api_key_param": "api_key",
+                      "base_url_param": "base_url",
+                      "context_length": 128000,
+                      "max_tokens_field_name": "max_tokens",
+                      "model_class": "ChatOllama",
+                      "model_name_param": "model"
+                    },
+                    "name": "gemma4:latest",
+                    "provider": "Ollama"
+                  },
+                  {
+                    "category": "Ollama",
+                    "icon": "Ollama",
+                    "metadata": {
+                      "api_key_param": "api_key",
+                      "base_url_param": "base_url",
+                      "context_length": 128000,
+                      "max_tokens_field_name": "max_tokens",
+                      "model_class": "ChatOllama",
+                      "model_name_param": "model"
+                    },
+                    "name": "llama3:latest",
+                    "provider": "Ollama"
                   }
                 ],
                 "override_skip": false,
@@ -12404,6 +12452,34 @@
                     },
                     "name": "gemini-3.1-flash-lite-preview",
                     "provider": "Google Generative AI"
+                  },
+                  {
+                    "category": "Ollama",
+                    "icon": "Ollama",
+                    "metadata": {
+                      "api_key_param": "api_key",
+                      "base_url_param": "base_url",
+                      "context_length": 128000,
+                      "max_tokens_field_name": "max_tokens",
+                      "model_class": "ChatOllama",
+                      "model_name_param": "model"
+                    },
+                    "name": "gemma4:latest",
+                    "provider": "Ollama"
+                  },
+                  {
+                    "category": "Ollama",
+                    "icon": "Ollama",
+                    "metadata": {
+                      "api_key_param": "api_key",
+                      "base_url_param": "base_url",
+                      "context_length": 128000,
+                      "max_tokens_field_name": "max_tokens",
+                      "model_class": "ChatOllama",
+                      "model_name_param": "model"
+                    },
+                    "name": "llama3:latest",
+                    "provider": "Ollama"
                   }
                 ],
                 "override_skip": false,
@@ -13877,8 +13953,8 @@
           "width": 320
         },
         "position": {
-          "x": 2190.4753623270653,
-          "y": 1390.178122380031
+          "x": 1365.1942772125124,
+          "y": 248.76113772562923
         },
         "selected": false,
         "type": "genericNode"
@@ -14028,9 +14104,9 @@
       }
     ],
     "viewport": {
-      "x": 395.1048527688703,
-      "y": 176.01904784154436,
-      "zoom": 0.25
+      "x": 77.71756233707816,
+      "y": 95.0703281141433,
+      "zoom": 0.3430197705930521
     }
   },
   "description": "Unlock the Power of AI in Your Business Conversations.",
